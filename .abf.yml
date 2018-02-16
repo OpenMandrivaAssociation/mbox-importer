@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   mbox-importer-17.12.1.tar.xz: 095f9a5b8c1003adb96e56d85f3e70dc15898b7f
+sources:
+  mbox-importer-17.12.2.tar.xz: 466f95ddb610c1474925ac9805a6822317da91f9
