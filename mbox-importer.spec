@@ -16,6 +16,8 @@ BuildRequires:	cmake(KF5Akonadi)
 BuildRequires:	cmake(KF5MailCommon)
 BuildRequires:	cmake(KF5MailImporterAkonadi)
 BuildRequires:	cmake(KF5PimCommonAkonadi)
+BuildRequires:	cmake(QGpgme)
+BuildRequires:	cmake(Gpgmepp)
 BuildRequires:	boost-devel
 BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(Qt5Core)
