@@ -2,7 +2,7 @@
 
 Summary:	MBox Importer allows to migrate data from MBox
 Name:		mbox-importer
-Version:	18.08.1
+Version:	18.08.2
 Release:	1
 Epoch:		3
 License:	GPLv2+
