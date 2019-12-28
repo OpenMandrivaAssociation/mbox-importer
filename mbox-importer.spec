@@ -49,6 +49,3 @@ MBox Importer allows to migrate data from MBox.
 %ninja_install -C build
 
 %find_lang mboximporter
-
-# FIXME workaround for gdb 8.3.1 hang
-strip --strip-unneeded %{buildroot}%{_bindir}/*
