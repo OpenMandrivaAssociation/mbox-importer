@@ -2,8 +2,8 @@
 
 Summary:	MBox Importer allows to migrate data from MBox
 Name:		mbox-importer
-Version:	19.12.2
-Release:	2
+Version:	19.12.3
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
