@@ -2,7 +2,7 @@
 
 Summary:	MBox Importer allows to migrate data from MBox
 Name:		mbox-importer
-Version:	23.04.3
+Version:	23.08.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -14,10 +14,10 @@ BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5Service)
 BuildRequires:	cmake(KF5Crash)
 BuildRequires:	cmake(KF5KIO)
-BuildRequires:	cmake(KF5Akonadi)
-BuildRequires:	cmake(KF5MailCommon)
-BuildRequires:	cmake(KF5MailImporterAkonadi)
-BuildRequires:	cmake(KF5PimCommonAkonadi)
+BuildRequires:	cmake(KPim5Akonadi)
+BuildRequires:	cmake(KPim5MailCommon)
+BuildRequires:	cmake(KPim5MailImporterAkonadi)
+BuildRequires:	cmake(KPim5PimCommonAkonadi)
 BuildRequires:	cmake(QGpgme)
 BuildRequires:	cmake(Gpgmepp)
 BuildRequires:	boost-devel
