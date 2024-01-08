@@ -4,7 +4,6 @@ Summary:	MBox Importer allows to migrate data from MBox
 Name:		plasma6-mbox-importer
 Version:	24.01.85
 Release:	1
-Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
@@ -18,6 +17,7 @@ BuildRequires:	cmake(KPim6Akonadi)
 BuildRequires:	cmake(KPim6MailCommon)
 BuildRequires:	cmake(KPim6MailImporterAkonadi)
 BuildRequires:	cmake(KPim6PimCommonAkonadi)
+BuildRequires:	cmake(KPim6Libkdepim)
 BuildRequires:	cmake(QGpgme)
 BuildRequires:	cmake(Gpgmepp)
 BuildRequires:	boost-devel
@@ -25,21 +25,18 @@ BuildRequires:	sasl-devel
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Widgets)
-Provides:	mboximporter = %{EVRD}
-Conflicts:	mboximporter < 3:17.04.0
-Obsoletes:	mboximporter < 3:17.04.0
 
 %description
 MBox Importer allows to migrate data from MBox.
 
 %files -f mboximporter.lang
-%{_kde6_applicationsdir}/org.kde.mboximporter.desktop
+%{_datadir}/applications/org.kde.mboximporter.desktop
 %{_bindir}/mboximporter
 
 #----------------------------------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup -p1 -n mbox-importer-%{version}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
