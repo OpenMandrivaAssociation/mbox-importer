@@ -5,7 +5,7 @@
 
 Summary:	MBox Importer allows to migrate data from MBox
 Name:		plasma6-mbox-importer
-Version:	24.12.2
+Version:	24.12.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
