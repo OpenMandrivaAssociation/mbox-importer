@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Summary:	MBox Importer allows to migrate data from MBox
-Name:		plasma6-mbox-importer
+Name:		mbox-importer
 Version:	25.04.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
