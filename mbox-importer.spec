@@ -5,7 +5,7 @@
 
 Summary:	MBox Importer allows to migrate data from MBox
 Name:		mbox-importer
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -34,25 +34,14 @@ BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Widgets)
 
+%rename plasma6-mbox-importer
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 MBox Importer allows to migrate data from MBox.
 
-%files -f mboximporter.lang
+%files -f %{name}.lang
 %{_datadir}/applications/org.kde.mboximporter.desktop
 %{_bindir}/mboximporter
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n mbox-importer-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-
-%find_lang mboximporter
